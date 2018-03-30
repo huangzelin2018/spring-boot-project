@@ -11,7 +11,7 @@ public class Sender {
 	
    @Autowired
    private AmqpTemplate rabbitMQTemplate;
- 
+
    public void send() {
       String context = "hello :" + new Date();
       System.out.println("Sender : " + context);
